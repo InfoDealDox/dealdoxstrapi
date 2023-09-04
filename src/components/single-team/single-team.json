@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_single_team_single_teams",
+  "info": {
+    "displayName": "Single-Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "shortDesc": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "linkedin": {
+      "type": "string"
+    }
+  }
+}

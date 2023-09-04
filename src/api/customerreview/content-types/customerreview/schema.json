@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "customerreviews",
+  "info": {
+    "singularName": "customerreview",
+    "pluralName": "customerreviews",
+    "displayName": "Customer Review"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "singleFeedbacks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "single-feedback.single-feedback"
+    }
+  }
+}

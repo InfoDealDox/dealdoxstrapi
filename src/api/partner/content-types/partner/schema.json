@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "partners",
+  "info": {
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "Partner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "partnerSlides": {
+      "displayName": "partnerSlides",
+      "type": "component",
+      "repeatable": true,
+      "component": "partner-images.partner-slides"
+    }
+  }
+}

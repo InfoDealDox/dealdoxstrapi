@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_partner_images_partner_slides",
+  "info": {
+    "displayName": "partnerSlides"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

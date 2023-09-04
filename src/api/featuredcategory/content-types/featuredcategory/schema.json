@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featuredcategories",
+  "info": {
+    "singularName": "featuredcategory",
+    "pluralName": "featuredcategories",
+    "displayName": "Featured Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "featured_blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::featuredblog.featuredblog",
+      "inversedBy": "featured_categories"
+    }
+  }
+}

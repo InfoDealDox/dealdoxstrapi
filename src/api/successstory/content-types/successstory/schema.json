@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "successstories",
+  "info": {
+    "singularName": "successstory",
+    "pluralName": "successstories",
+    "displayName": "Success Story",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "shortDesc": {
+      "type": "string"
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Read More"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "longDesc": {
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "successcategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::successcategory.successcategory",
+      "mappedBy": "success_stories"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_single_feedback_single_feedbacks",
+  "info": {
+    "displayName": "Single-Feedback"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "shortDec": {
+      "type": "text"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "quite": {
+      "type": "text"
+    }
+  }
+}
