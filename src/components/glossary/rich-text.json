@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_glossary_rich_texts",
+  "info": {
+    "displayName": "richText",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "longDesc": {
+      "type": "richtext"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

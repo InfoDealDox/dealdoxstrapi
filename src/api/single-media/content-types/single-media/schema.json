@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "single_medias",
+  "info": {
+    "singularName": "single-media",
+    "pluralName": "single-medias",
+    "displayName": "Single-Media"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "singleMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media.media"
+    }
+  }
+}

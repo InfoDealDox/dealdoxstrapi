@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "shortDesc": {
       "type": "string"
@@ -30,7 +31,7 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
@@ -52,6 +53,19 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "author": {
+      "type": "string"
+    },
+    "avtar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

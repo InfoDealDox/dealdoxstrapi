@@ -49,6 +49,19 @@
       "relation": "manyToMany",
       "target": "api::successcategory.successcategory",
       "mappedBy": "success_stories"
+    },
+    "author": {
+      "type": "string"
+    },
+    "avtar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
