@@ -4,7 +4,8 @@
   "info": {
     "singularName": "single-media",
     "pluralName": "single-medias",
-    "displayName": "Single-Media"
+    "displayName": "Single-Media",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
