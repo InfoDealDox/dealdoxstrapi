@@ -73,6 +73,10 @@
       "relation": "manyToOne",
       "target": "api::blog-author.blog-author",
       "inversedBy": "blogs"
+    },
+    "time_to_read": {
+      "type": "integer",
+      "default": 3
     }
   }
 }
