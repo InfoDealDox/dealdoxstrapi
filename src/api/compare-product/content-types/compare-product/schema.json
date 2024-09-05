@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "compare_products",
+  "info": {
+    "singularName": "compare-product",
+    "pluralName": "compare-products",
+    "displayName": "compare product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ComparisionProduct": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comparision.product-comparison"
+    }
+  }
+}
