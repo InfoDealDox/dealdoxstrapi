@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "sap_compares",
+  "info": {
+    "singularName": "sap-compare",
+    "pluralName": "sap-compares",
+    "displayName": "SAPCompare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SAPCompare": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comparision.sapcpq-comparision"
+    }
+  }
+}

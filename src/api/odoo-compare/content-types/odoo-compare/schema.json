@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "odoo_compares",
+  "info": {
+    "singularName": "odoo-compare",
+    "pluralName": "odoo-compares",
+    "displayName": "OdooCompare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OdooCompare": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comparision.odoo-comparision"
+    }
+  }
+}

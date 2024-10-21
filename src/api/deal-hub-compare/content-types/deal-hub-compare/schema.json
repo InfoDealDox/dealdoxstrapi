@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "deal_hub_compares",
+  "info": {
+    "singularName": "deal-hub-compare",
+    "pluralName": "deal-hub-compares",
+    "displayName": "DealHubCompare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DealHubCompare": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comparision.deal-hub-comparision"
+    }
+  }
+}

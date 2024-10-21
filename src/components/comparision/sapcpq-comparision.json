@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_comparision_sapcpq_comparisions",
+  "info": {
+    "displayName": "SAPCPQComparision"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string"
+    },
+    "SAP_CPQ": {
+      "type": "string"
+    },
+    "DealDox": {
+      "type": "string"
+    }
+  }
+}

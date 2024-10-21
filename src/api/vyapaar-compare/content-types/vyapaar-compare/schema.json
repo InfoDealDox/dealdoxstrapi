@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "vyapaar_compares",
+  "info": {
+    "singularName": "vyapaar-compare",
+    "pluralName": "vyapaar-compares",
+    "displayName": "VyapaarCompare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "VyapaarCompare": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comparision.vyapaar-comparision"
+    }
+  }
+}

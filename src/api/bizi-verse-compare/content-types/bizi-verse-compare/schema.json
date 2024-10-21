@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bizi_verse_compares",
+  "info": {
+    "singularName": "bizi-verse-compare",
+    "pluralName": "bizi-verse-compares",
+    "displayName": "BiziVerseCompare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BiziVerseCompare": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comparision.bizi-verse-comparision"
+    }
+  }
+}

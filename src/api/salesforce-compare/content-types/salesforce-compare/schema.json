@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "salesforce_compares",
+  "info": {
+    "singularName": "salesforce-compare",
+    "pluralName": "salesforce-compares",
+    "displayName": "SalesforceCompare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SalesforceCompare": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comparision.salesforce-comparision"
+    }
+  }
+}

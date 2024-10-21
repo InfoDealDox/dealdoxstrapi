@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "zoho_compares",
+  "info": {
+    "singularName": "zoho-compare",
+    "pluralName": "zoho-compares",
+    "displayName": "ZohoCompare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ZohoComare": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comparision.zoho-comparision"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "hub_spot_compares",
+  "info": {
+    "singularName": "hub-spot-compare",
+    "pluralName": "hub-spot-compares",
+    "displayName": "HubSpotCompare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HubSpotCompare": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comparision.hub-spot-comparision"
+    }
+  }
+}

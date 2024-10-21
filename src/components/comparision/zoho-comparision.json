@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_comparision_zoho_comparisions",
+  "info": {
+    "displayName": "ZohoComparision"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string"
+    },
+    "Zoho": {
+      "type": "string"
+    },
+    "Dealdox": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_comparision_hub_spot_comparisions",
+  "info": {
+    "displayName": "HubSpotComparision"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string"
+    },
+    "HubSpot_CPQ": {
+      "type": "string"
+    },
+    "DealDox": {
+      "type": "string"
+    }
+  }
+}

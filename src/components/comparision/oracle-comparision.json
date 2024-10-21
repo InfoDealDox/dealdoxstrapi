@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_comparision_oracle_comparisions",
+  "info": {
+    "displayName": "OracleComparision"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string"
+    },
+    "OracleCPQ": {
+      "type": "string"
+    },
+    "DealDox": {
+      "type": "string"
+    }
+  }
+}

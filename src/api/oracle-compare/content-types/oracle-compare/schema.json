@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "oracle_compares",
+  "info": {
+    "singularName": "oracle-compare",
+    "pluralName": "oracle-compares",
+    "displayName": "OracleCompare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OracleCompare": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comparision.oracle-comparision"
+    }
+  }
+}

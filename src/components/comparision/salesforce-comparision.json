@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_comparision_salesforce_comparisions",
+  "info": {
+    "displayName": "SalesforceComparision"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string"
+    },
+    "Salesforce": {
+      "type": "string"
+    },
+    "Dealdox": {
+      "type": "string"
+    }
+  }
+}

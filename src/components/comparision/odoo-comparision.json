@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_comparision_odoo_comparisions",
+  "info": {
+    "displayName": "OdooComparision"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string"
+    },
+    "Odoo": {
+      "type": "string"
+    },
+    "Dealdox": {
+      "type": "string"
+    }
+  }
+}

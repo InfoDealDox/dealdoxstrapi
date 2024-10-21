@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_comparision_connect_wise_comparisions",
+  "info": {
+    "displayName": "ConnectWiseComparision"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string"
+    },
+    "ConnectWise_Sell": {
+      "type": "string"
+    },
+    "DealDox": {
+      "type": "string"
+    }
+  }
+}
