@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_comparision_new_biziversecomparisions",
+  "info": {
+    "displayName": "NewBiziversecomparision"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string"
+    },
+    "Biziverse": {
+      "type": "string"
+    },
+    "DealDox": {
+      "type": "string"
+    }
+  }
+}
