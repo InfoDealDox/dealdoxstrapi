@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_newcompare_modified_compares",
+  "info": {
+    "displayName": "ModifiedCompare",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "h1_tag": {
+      "type": "text"
+    },
+    "h2_first_tag": {
+      "type": "string"
+    },
+    "h2_second_tag": {
+      "type": "text"
+    },
+    "h2_third_tag": {
+      "type": "text"
+    },
+    "h2_fourth_tag": {
+      "type": "text"
+    },
+    "h2_fivth_tag": {
+      "type": "text"
+    },
+    "h2_sixth_tag": {
+      "type": "text"
+    },
+    "h2_sixth_content": {
+      "type": "richtext"
+    },
+    "h1_Content": {
+      "type": "richtext"
+    },
+    "h2_second_content": {
+      "type": "richtext"
+    },
+    "h3_third_content": {
+      "type": "richtext"
+    },
+    "h2_first_content": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

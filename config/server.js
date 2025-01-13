@@ -3,6 +3,7 @@ module.exports = ({ env }) => ({
   port: env.int('PORT', 1337),
   url: env('PUBLIC_URL', 'https://cms.dealdox.io'),
 
+
   app: {
     keys: env.array('APP_KEYS'),
   },

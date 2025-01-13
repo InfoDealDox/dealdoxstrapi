@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "all_compare_tables",
+  "info": {
+    "singularName": "all-compare-table",
+    "pluralName": "all-compare-tables",
+    "displayName": "AllCompareTable",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comparingall": {
+      "type": "component",
+      "repeatable": true,
+      "component": "newcompare.modified-compare"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_newcompare_compare_tables",
+  "info": {
+    "displayName": "compareTable"
+  },
+  "options": {},
+  "attributes": {
+    "Table1": {
+      "type": "text"
+    },
+    "Table2": {
+      "type": "text"
+    }
+  }
+}

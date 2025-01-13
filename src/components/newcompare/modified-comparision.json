@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_newcompare_modified_comparisions",
+  "info": {
+    "displayName": "ModifiedComparision"
+  },
+  "options": {},
+  "attributes": {
+    "CompareComponent": {
+      "displayName": "ModifiedCompare",
+      "type": "component",
+      "repeatable": false,
+      "component": "newcompare.modified-compare"
+    }
+  }
+}
