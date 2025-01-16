@@ -53,6 +53,9 @@
     },
     "Point_4": {
       "type": "string"
+    },
+    "Point_5": {
+      "type": "text"
     }
   }
 }
