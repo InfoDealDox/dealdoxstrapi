@@ -33,9 +33,6 @@
     "h1_Content": {
       "type": "richtext"
     },
-    "h2_second_content": {
-      "type": "richtext"
-    },
     "h3_third_content": {
       "type": "richtext"
     },
@@ -43,6 +40,18 @@
       "type": "richtext"
     },
     "Title": {
+      "type": "string"
+    },
+    "Point_1": {
+      "type": "text"
+    },
+    "Point_2": {
+      "type": "text"
+    },
+    "Point_3": {
+      "type": "text"
+    },
+    "Point_4": {
       "type": "string"
     }
   }
