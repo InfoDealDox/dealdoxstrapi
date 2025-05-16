@@ -11,7 +11,9 @@
       "type": "enumeration",
       "enum": [
         "Facebook",
-        "Twitter"
+        "Twitter",
+        "Linkedin",
+        "Instagram"
       ],
       "required": true
     },
