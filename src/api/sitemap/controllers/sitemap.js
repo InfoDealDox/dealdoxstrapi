@@ -225,7 +225,7 @@ module.exports = {
       lastmod: new Date(glossary.updatedAt).toISOString(),
       priority: 0.7,
     }));
-    const successStoryUrl = glossaryEntries.map((success) => ({
+    const successStoryUrl = successEntries.map((success) => ({
       loc: `https://www.dealdox.io/success-story/${success.slug}`,
       lastmod: new Date(success.updatedAt).toISOString(),
       priority: 0.7,
