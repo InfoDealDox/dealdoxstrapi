@@ -21,6 +21,12 @@
     "link": {
       "type": "string",
       "required": true
+    },
+    "publication_date": {
+      "type": "date"
+    },
+    "news_name": {
+      "type": "string"
     }
   }
 }

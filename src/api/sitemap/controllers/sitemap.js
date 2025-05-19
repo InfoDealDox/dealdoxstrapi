@@ -213,6 +213,19 @@ module.exports = {
       }
     );
 
+//    const newsEntries = await strapi.entityService.findMany(
+//   "api::single-media.single-media",
+//   {
+//     populate: ['singleMedia'], 
+
+//   }
+// );
+
+
+
+
+  
+
     // // 3. Map dynamic data to sitemap URL format
     const blogUrls = blogEntries.map((blog) => ({
       loc: `https://www.dealdox.io/blog/${blog.slug}`,
@@ -231,8 +244,19 @@ module.exports = {
       priority: 0.7,
     }));
 
+    // const newsUrl = newsEntries.singleMedia.map((news)=>({
+    //   loc:news.link,
+    //   newsName:news.title,
+
+    // }))
+
     // // 4. Combine static and dynamic URLs
-    const urls = [...staticUrls, ...blogUrls, ...glossaryUrl,...successStoryUrl];
+    const urls = [
+      ...staticUrls,
+      ...blogUrls,
+      ...glossaryUrl,
+      ...successStoryUrl,
+    ];
 
     // 5. Generate XML sitemap string
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
