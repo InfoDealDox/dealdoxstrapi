@@ -213,18 +213,12 @@ module.exports = {
       }
     );
 
-//    const newsEntries = await strapi.entityService.findMany(
-//   "api::single-media.single-media",
-//   {
-//     populate: ['singleMedia'], 
-
-//   }
-// );
-
-
-
-
-  
+    const newsEntries = await strapi.entityService.findMany(
+      "api::single-media.single-media",
+      {
+        populate: ["singleMedia"],
+      }
+    );
 
     // // 3. Map dynamic data to sitemap URL format
     const blogUrls = blogEntries.map((blog) => ({
@@ -244,11 +238,12 @@ module.exports = {
       priority: 0.7,
     }));
 
-    // const newsUrl = newsEntries.singleMedia.map((news)=>({
-    //   loc:news.link,
-    //   newsName:news.title,
-
-    // }))
+    const newsUrl = newsEntries.singleMedia.map((news) => ({
+      loc: news.link,
+      newsName: news.title,
+      publication: new Date(news.publication_date).toISOString(),
+      news_name: news.news_name,
+    }));
 
     // // 4. Combine static and dynamic URLs
     const urls = [
@@ -258,24 +253,69 @@ module.exports = {
       ...successStoryUrl,
     ];
 
+    const newsUrls = [...newsUrl];
+
+    function escapeXml(unsafe) {
+      try {
+        const safeStr = String(unsafe ?? "");
+        return safeStr.replace(/[<>&'"]/g, (c) => {
+          switch (c) {
+            case "<":
+              return "&lt;";
+            case ">":
+              return "&gt;";
+            case "&":
+              return "&amp;";
+            case "'":
+              return "&apos;";
+            case '"':
+              return "&quot;";
+          }
+        });
+      } catch (e) {
+        return "";
+      }
+    }
+
     // 5. Generate XML sitemap string
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+                    http://www.google.com/schemas/sitemap-news/0.9
+                    http://www.google.com/schemas/sitemap-news/0.9/sitemap-news.xsd">
 ${urls
   .map(
     (url) => `
   <url>
-    <loc>${url.loc}</loc>
-    ${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ""}
-    <priority>${url.priority}</priority>
+    <loc>${escapeXml(url.loc)}</loc>
+    ${url.lastmod ? `<lastmod>${escapeXml(url.lastmod)}</lastmod>` : ""}
+    <priority>${escapeXml(url.priority)}</priority>
+  </url>`
+  )
+  .join("")}
+${newsUrls
+  .map(
+    (newsData) => `
+  <url>
+    <loc>${escapeXml(newsData.loc)}</loc>
+    <news:news>
+      <news:publication>
+        <news:name>${escapeXml(newsData.news_name ?? "")}</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>${escapeXml(
+        newsData.publication ?? ""
+      )}</news:publication_date>
+      <news:title>${escapeXml(newsData.newsName ?? "")}</news:title>
+    </news:news>
   </url>`
   )
   .join("")}
 </urlset>`;
-
     // 6. Set response content type and body
     ctx.set("Content-Type", "application/xml");
     ctx.body = xml;
