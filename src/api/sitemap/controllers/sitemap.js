@@ -238,12 +238,12 @@ module.exports = {
       priority: 0.7,
     }));
 
-    const newsUrl = newsEntries.singleMedia.map((news) => ({
-      loc: news.link,
-      newsName: news.title,
-      publication: new Date(news.publication_date).toISOString(),
-      news_name: news.news_name,
-    }));
+    // const newsUrl = newsEntries.singleMedia.map((news) => ({
+    //   loc: news.link,
+    //   newsName: news.title,
+    //   publication: new Date(news.publication_date).toISOString(),
+    //   news_name: news.news_name,
+    // }));
 
     // // 4. Combine static and dynamic URLs
     const urls = [
@@ -253,7 +253,7 @@ module.exports = {
       ...successStoryUrl,
     ];
 
-    const newsUrls = [...newsUrl];
+    // const newsUrls = [...newsUrl];
 
     function escapeXml(unsafe) {
       try {
@@ -297,24 +297,7 @@ ${urls
   </url>`
   )
   .join("")}
-${newsUrls
-  .map(
-    (newsData) => `
-  <url>
-    <loc>${escapeXml(newsData.loc)}</loc>
-    <news:news>
-      <news:publication>
-        <news:name>${escapeXml(newsData.news_name ?? "")}</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>${escapeXml(
-        newsData.publication ?? ""
-      )}</news:publication_date>
-      <news:title>${escapeXml(newsData.newsName ?? "")}</news:title>
-    </news:news>
-  </url>`
-  )
-  .join("")}
+
 </urlset>`;
     // 6. Set response content type and body
     ctx.set("Content-Type", "application/xml");
